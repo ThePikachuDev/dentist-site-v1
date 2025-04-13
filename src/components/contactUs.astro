@@ -1,84 +1,259 @@
----
-
----
-
 <div
     id="contactUs"
-    class="contactUs p-4 pt-16 w-screen flex flex-col gap-3 lg:flex-row justify-between items-center h-fit"
+    class="contactUs p-4 pt-8 md:pt-16 w-full flex flex-col gap-6 lg:flex-row justify-between items-center"
 >
-    <div class="form-ContactUS h-fit lg:h-screen w-screen lg:w-1/2">
-        <div class="p-4 mb-5">
-            <form class="flex flex-col gap-3 items-center" action="">
-                <h1 class="text-5xl">Contact Us</h1>
-                <div class="w-40 h-[2px] bg-black"></div>
-                <div>
-                    <h1 class="pl-0">Your Name</h1>
+    <div class="form-ContactUS w-full lg:w-1/2 max-w-lg mx-auto lg:mx-0">
+        <div class="p-2 md:p-4 mb-5">
+            <form
+                class="flex flex-col gap-5 items-center md:items-start"
+                action=""
+            >
+                <div class="text-center md:text-left w-full">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                        Contact Us
+                    </h1>
+                    <div
+                        class="w-20 md:w-32 h-[2px] bg-black mt-2 mx-auto md:mx-0"
+                    >
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <label
+                        for="name"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Your Name</label
+                    >
                     <input
                         type="text"
+                        id="name"
                         name="name"
-                        class="border-[2px] p-3 w-96 rounded-md"
-                        placeholder="Your Name"
+                        class="p-3 w-full rounded-md transition-all duration-300"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
                     />
                 </div>
 
-                <div class="mt-4">
-                    <h1>Your Message</h1>
+                <div class="w-full">
+                    <label
+                        for="email"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Your Email</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="border-[1.5px] p-3 w-full rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                    />
+                </div>
+
+                <div class="w-full">
+                    <label
+                        for="phone"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Phone Number</label
+                    >
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="border-[1.5px] p-3 w-full rounded-md transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel"
+                    />
+                </div>
+
+                <div class="w-full">
+                    <label
+                        for="message"
+                        class="block text-sm font-medium text-gray-700 mb-1"
+                        >Your Message</label
+                    >
                     <textarea
                         name="message"
-                        placeholder="Your Message"
-                        class="border-[2px] p-3 w-96 h-30 rounded-md"
-                        id="message"></textarea>
+                        id="message"
+                        placeholder="How can we help you?"
+                        class="p-3 w-full min-h-32 rounded-md transition-all duration-300 focus:ring-2 resize-y"
+                    ></textarea>
                 </div>
+
                 <button
                     id="animated-btn"
                     type="submit"
-                    class="border-2 w-fit h-fit relative flex gap-3 overflow-hidden cursor-pointer rounded-xl px-4 p-2"
+                    aria-label="Submit contact form"
+                    class="border-2 mt-2 self-center md:self-start w-fit relative flex items-center gap-3 overflow-hidden cursor-pointer rounded-xl px-6 py-3 font-medium transition-all duration-300"
                 >
                     <div
                         id="btn-cover"
-                        class="w-full h-full z-[-1] absolute top-0 -left-40 bg-black"
+                        class="w-full h-full z-[-1] absolute top-0 -left-100 bg-black transition-all duration-500"
                     >
                     </div>
-                    <span>Submit</span>
-                    <img
-                        src="/arrow-up-solid.svg"
-                        class="w-6 h-6 rotate-45"
-                        alt=""
-                    />
+                    <span>Send Message</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 transform rotate-0 transition-transform duration-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
                 </button>
             </form>
         </div>
     </div>
 
     <div
-        class="ContactUS-Info px-4 h-[50vw] lg:h-screen w-screen lg:w-full flex flex-col gap-3 items-center"
+        class="ContactUS-Info px-4 w-full lg:w-1/2 flex flex-col gap-5 items-center"
     >
-        <h1 class="text-5xl">Find Us Here</h1>
-        <div class="w-40 h-[2px] bg-black"></div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.7033990567547!2d74.8701080108009!3d31.641970374050704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964a7a109e319%3A0xe04f4da93606ba72!2sKmaxx%20American%20Hospital%20-%20Dr%20Ved%20Gupta%20Campus!5e0!3m2!1sen!2sin!4v1744305411910!5m2!1sen!2sin"
-            class="h-full w-full lg:w-3/4 lg:h-1/2"
-            style="border:0;
-            padding: 0 16px;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="text-center w-full mb-2">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+                Find Us Here
+            </h1>
+            <div class="w-20 md:w-32 h-[2px] bg-black mt-2 mx-auto"></div>
+        </div>
+
+        <div
+            class="contact-details w-full max-w-lg bg-white p-4 rounded-lg mb-6 shadow-sm"
+        >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="flex items-start gap-3">
+                    <div class="mt-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Phone</h3>
+                        <p class="text-gray-600">(123) 456-7890</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="mt-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Email</h3>
+                        <p class="text-gray-600">info@dentalclinic.com</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="mt-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Hours</h3>
+                        <p class="text-gray-600">Mon-Fri: 9AM-6PM</p>
+                        <p class="text-gray-600">Sat: 9AM-2PM</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <div class="mt-1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                            ></path>
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-gray-800">Address</h3>
+                        <p class="text-gray-600">
+                            Kmaxx American Hospital, Dr Ved Gupta Campus
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="w-full h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md"
+        >
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.7033990567547!2d74.8701080108009!3d31.641970374050704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964a7a109e319%3A0xe04f4da93606ba72!2sKmaxx%20American%20Hospital%20-%20Dr%20Ved%20Gupta%20Campus!5e0!3m2!1sen!2sin!4v1744305411910!5m2!1sen!2sin"
+                class="w-full h-full"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Google Maps showing our location"></iframe>
+        </div>
     </div>
 </div>
 
 <style>
     input:focus,
     textarea:focus {
-        outline: 2px solid black;
-        box-shadow: none;
+        outline: 3px solid black;
+        border: none;
     }
 
     input,
     textarea {
-        transition: all 0.1s ease;
-        outline: 1.5px solid gray;
-        border: 1.5px solid gray;
-        box-shadow: none;
+        transition: all 0.2s ease;
+        outline: 2px solid black;
+
+        border: none;
     }
 
     #animated-btn {
@@ -86,6 +261,7 @@
         border: 1px solid black;
         outline: none;
     }
+
     #animated-btn:hover {
         z-index: 99;
         color: white;
@@ -96,11 +272,28 @@
         left: 0;
         transition: all ease-in-out 0.5s;
     }
-    #animated-btn:hover img {
+
+    #animated-btn:hover svg {
         z-index: 99;
-        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-        rotate: 90deg;
-        filter: invert(1);
+        transform: translateX(3px) rotate(-45deg);
+        filter: brightness(10);
     }
+
+    /* Responsive improvements */
+    @media (max-width: 640px) {
+        input,
+        textarea,
+        button {
+            font-size: 16px; /* Prevents zoom on iOS */
+        }
+    }
+
+    /* Focus styles for accessibility */
+    /*     input:focus-visible, */
+    /*     textarea:focus-visible, */
+    /*     button:focus-visible, */
+    /*     input[type="radio"]:focus-visible { */
+    /*         outline: 2px solid #3b82f6; */
+    /*         outline-offset: 2px; */
+    /*     } */
 </style>
-<script></script>
