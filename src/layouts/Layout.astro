@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/navbar.astro";
 import "../../src/styles/global.css";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -23,6 +24,7 @@ import "../../src/styles/global.css";
         <div data-scroll-container>
             <Navbar />
             <slot />
+            <Footer />
         </div>
     </body>
 </html>

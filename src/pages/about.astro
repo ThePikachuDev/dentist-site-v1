@@ -1,0 +1,429 @@
+---
+// About.astro
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout class="" title="About Us | Dr. Yukti Ghei Gupta Dental Clinic">
+    <div class="relative min-h-screen">
+        <div class="absolute inset-0 z-0">
+            <img
+                src="/background.svg"
+                alt="Background Pattern"
+                class="w-full h-full object-cover blur-[100px]"
+            />
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative mt-10 z-10 container mx-auto px-4 py-16">
+            <!-- Hero Section -->
+            <section class="mb-16 text-center">
+                <h1
+                    class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600"
+                >
+                    About Our Clinic
+                </h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Exceptional dental care with a gentle touch at Dr. Yukti
+                    Ghei Gupta's Dental Clinic
+                </p>
+            </section>
+
+            <!-- Main Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- About Dr. Yukti -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-semibold mb-8 text-indigo-600">
+                        Meet Dr. Yukti Ghei Gupta
+                    </h2>
+
+                    <div
+                        class="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 mb-8"
+                    >
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Education & Expertise
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Dr. Yukti Ghei Gupta is a highly qualified dental
+                            professional with extensive education and training.
+                            She holds a Bachelor of Dental Surgery (B.D.S)
+                            degree and has further specialized with a Master of
+                            Dental Surgery (M.D.S) qualification, placing her at
+                            the forefront of modern dental practices and
+                            techniques. Her academic excellence provides the
+                            foundation for the exceptional care delivered at our
+                            clinic.
+                        </p>
+
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Our Philosophy
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            At the heart of Dr. Yukti Ghei Gupta's practice is a
+                            patient-centered philosophy that emphasizes
+                            compassionate care, transparent communication, and
+                            personalized treatment plans. We understand that
+                            visiting the dentist can be anxiety-inducing for
+                            many patients, which is why we've created a
+                            welcoming environment where your comfort is our
+                            priority. Our practice combines the latest dental
+                            technologies with a gentle approach, ensuring that
+                            each visit is as pleasant and stress-free as
+                            possible.
+                        </p>
+
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Comprehensive Expertise
+                        </h3>
+                        <p class="text-gray-700">
+                            Dr. Yukti has cultivated specialized expertise in
+                            several critical areas of dentistry. As a Cosmetic
+                            Dentist, she helps patients achieve the smile
+                            they've always dreamed of through procedures such as
+                            veneers, teeth whitening, and cosmetic bonding. Her
+                            qualifications as a Pediatric Dentist make her
+                            particularly adept at caring for our youngest
+                            patients, ensuring their early dental experiences
+                            are positive and establishing healthy habits for
+                            life. Additionally, as a Root Canal Specialist, she
+                            provides expert endodontic treatment with precision
+                            and care, often saving teeth that might otherwise
+                            require extraction.
+                        </p>
+                    </div>
+
+                    <div
+                        class="bg-white bg-opacity-90 rounded-xl shadow-xl p-8"
+                    >
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Our Commitment to Excellence
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Excellence in dental care isn't just about clinical
+                            skills—it encompasses the entire patient experience.
+                            From the moment you contact our clinic to schedule
+                            your appointment to the follow-up care after your
+                            procedure, our dedicated team strives to exceed your
+                            expectations. We invest in continuing education and
+                            the latest dental technologies to ensure that our
+                            patients receive the most advanced, evidence-based
+                            treatments available. Dr. Yukti regularly attends
+                            professional conferences, workshops, and courses to
+                            stay at the cutting edge of dental innovation.
+                        </p>
+
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Community Involvement
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Beyond our clinical practice, we are deeply
+                            committed to improving oral health awareness within
+                            our community. Dr. Yukti Ghei Gupta regularly
+                            participates in local health initiatives, providing
+                            dental education seminars and free dental check-ups
+                            for underserved populations. We believe that a
+                            healthier community begins with education and
+                            accessibility to quality care, and we're proud to
+                            contribute to this important mission.
+                        </p>
+
+                        <h3 class="text-2xl font-medium mb-4 text-purple-600">
+                            Patient-Centered Approach
+                        </h3>
+                        <p class="text-gray-700">
+                            Every smile is unique, and so is every treatment
+                            plan at our clinic. We take the time to understand
+                            your specific needs, concerns, and goals for your
+                            dental health. Through thorough consultations and
+                            comprehensive examinations, we develop personalized
+                            care strategies that align with your individual
+                            circumstances. We believe in empowering our patients
+                            through education, ensuring you understand all
+                            available options and can make informed decisions
+                            about your dental care.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar with Contact Info & Services -->
+                <div>
+                    <div
+                        class="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 mb-8"
+                    >
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-600">
+                            Contact Information
+                        </h3>
+
+                        <div class="flex items-start mb-4">
+                            <span class="text-2xl text-purple-600 mr-4">📍</span
+                            >
+                            <div>
+                                <h4 class="font-medium text-gray-900">
+                                    Location
+                                </h4>
+                                <p class="text-gray-700">
+                                    Kmaxx American Hospital (Dr. Ved Gupta
+                                    Hospital), Mall Road, Amritsar, Punjab
+                                    143001
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start mb-4">
+                            <span class="text-2xl text-purple-600 mr-4">☎️</span
+                            >
+                            <div>
+                                <h4 class="font-medium text-gray-900">Phone</h4>
+                                <p class="text-gray-700">7087429669</p>
+                            </div>
+                        </div>
+
+                        <button
+                            id="bookAppointmentBtn"
+                            onclick="document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' })"
+                            class="w-full px-6 py-3 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl cursor-pointer mt-6"
+                        >
+                            Book Appointment
+                        </button>
+                    </div>
+
+                    <div
+                        class="bg-white bg-opacity-90 rounded-xl shadow-xl p-8"
+                    >
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-600">
+                            Our Services
+                        </h3>
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-2xl text-purple-600 mr-3"
+                                    >😁</span
+                                >
+                                <h4 class="font-medium text-gray-900">
+                                    Cosmetic Dentistry
+                                </h4>
+                            </div>
+                            <p class="text-gray-700 pl-10">
+                                Teeth whitening, veneers, bonding, and smile
+                                makeovers
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-2xl text-purple-600 mr-3"
+                                    >🧒</span
+                                >
+                                <h4 class="font-medium text-gray-900">
+                                    Pediatric Dentistry
+                                </h4>
+                            </div>
+                            <p class="text-gray-700 pl-10">
+                                Child-friendly care, preventive treatments, and
+                                education
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-2xl text-purple-600 mr-3"
+                                    >🦷</span
+                                >
+                                <h4 class="font-medium text-gray-900">
+                                    Root Canal Treatment
+                                </h4>
+                            </div>
+                            <p class="text-gray-700 pl-10">
+                                Expert endodontic care with minimal discomfort
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-purple-600 mr-3">✨</span>
+                                <h4 class="font-medium text-gray-900">
+                                    Preventive Care
+                                </h4>
+                            </div>
+                            <p class="text-gray-700 pl-10">
+                                Regular check-ups, cleanings, and oral health
+                                guidance
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="flex items-center mb-2">
+                                <span class="text-purple-600 mr-3">👑</span>
+                                <h4 class="font-medium text-gray-900">
+                                    Restorative Dentistry
+                                </h4>
+                            </div>
+                            <p class="text-gray-700 pl-10">
+                                Fillings, crowns, bridges, and dental implants
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <section
+                class="mt-16 bg-white bg-opacity-90 rounded-xl shadow-xl p-8"
+            >
+                <h2
+                    class="text-3xl font-semibold mb-8 text-center text-indigo-600"
+                >
+                    Patient Testimonials
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    <div
+                        class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg shadow"
+                    >
+                        <p class="text-gray-700 italic mb-4">
+                            "Dr. Yukti is incredibly gentle and patient. As
+                            someone with dental anxiety, I finally found a
+                            dentist I can trust. Her expertise in cosmetic
+                            dentistry has transformed my smile completely!"
+                        </p>
+                        <p class="font-medium text-indigo-600">— Priya S.</p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg shadow"
+                    >
+                        <p class="text-gray-700 italic mb-4">
+                            "My 5-year-old was terrified of dentists until we
+                            met Dr. Yukti. Her approach with children is
+                            amazing—my daughter now looks forward to her dental
+                            visits!"
+                        </p>
+                        <p class="font-medium text-indigo-600">— Rajiv M.</p>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg shadow"
+                    >
+                        <p class="text-gray-700 italic mb-4">
+                            "Dr. Yukti performed a root canal for me, and I was
+                            surprised by how painless the procedure was. Her
+                            expertise and the state-of-the-art equipment in her
+                            clinic made all the difference."
+                        </p>
+                        <p class="font-medium text-indigo-600">— Ananya K.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section
+                id="contactUs"
+                class="mt-16 bg-white bg-opacity-90 rounded-xl shadow-xl p-8"
+            >
+                <h2
+                    class="text-3xl font-semibold mb-8 text-center text-indigo-600"
+                >
+                    Book an Appointment
+                </h2>
+
+                <form class="max-w-2xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="name"
+                                >Full Name</label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="phone"
+                                >Phone Number</label
+                            >
+                            <input
+                                type="tel"
+                                id="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="email"
+                            >Email Address</label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        />
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="service"
+                            >Service Needed</label
+                        >
+                        <select
+                            id="service"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        >
+                            <option value="">Select a service</option>
+                            <option value="cosmetic">Cosmetic Dentistry</option>
+                            <option value="pediatric"
+                                >Pediatric Dentistry</option
+                            >
+                            <option value="rootcanal"
+                                >Root Canal Treatment</option
+                            >
+                            <option value="preventive">Preventive Care</option>
+                            <option value="restorative"
+                                >Restorative Dentistry</option
+                            >
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 mb-2" for="message"
+                            >Additional Information</label
+                        >
+                        <textarea
+                            id="message"
+                            rows="4"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="px-6 py-3 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold text-lg shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl w-full"
+                    >
+                        Submit Appointment Request
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+</Layout>
+
+<script>
+    // Any client-side JavaScript can go here
+    document.addEventListener("DOMContentLoaded", () => {
+        // Example: Form validation or other interactive features
+        const form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                // Here you would typically handle the form submission
+                alert(
+                    "Thank you for your appointment request! We will contact you shortly to confirm.",
+                );
+            });
+        }
+    });
+</script>

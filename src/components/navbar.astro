@@ -29,16 +29,16 @@
         class="humburgerMenu max-sm:flex hidden transition-all ease-in-out top-[-2rem] right-[-100rem] bg-white w-[70vw] h-[250vw] flex-col items-center pt-20 fixed font-bold space-y-6 text-2xl text-gray-700"
     >
         <li class="mt-9">
-            <a href="#" class="hover:text-blue-600">Home</a>
+            <a href="/" class="hover:text-blue-600">Home</a>
         </li>
         <li>
-            <a href="#" class="hover:text-blue-600">About</a>
+            <a href="about" class="hover:text-blue-600">About</a>
         </li>
         <li
             class="serviceElem w-full transition-all mb-0 ease-in-out text-center relative"
         >
             <a
-                href="#"
+                href="/services"
                 class="flex items-center justify-center gap-2 w-full text-center hover:text-blue-600"
             >
                 <span class="text-center"> Services </span>
@@ -70,32 +70,40 @@
 
     <ul class="hidden sm:flex space-x-6 text-gray-700 font-medium">
         <li>
-            <a href="#" class="hover:text-blue-600">Home</a>
+            <a href="/" class="hover:text-blue-600">Home</a>
         </li>
         <li>
-            <a href="#" class="hover:text-blue-600">About</a>
+            <a href="/about" class="hover:text-blue-600">About</a>
         </li>
         <li class="relative hover:**:data-elem:block">
-            <a href="#" class="hover:text-blue-600">Services</a>
+            <a href="/services" class="cursor-pointer hover:text-blue-600"
+                >Services</a
+            >
             <ul
                 data-elem
-                class="absolute overflow-hidden hidden group-hover:block hover:block font-light
-                rounded-lg pt-3 left-0 text-center text-sm text-nowrap bg-white w-fit"
+                class="absolute overflow-hidden hidden group-hover:block hover:block font-medium
+                rounded-lg pt-3 -left-3 text-left pl-2 pb-3 text-sm text-nowrap bg-white w-fit"
             >
                 <li class="hover:bg-gray-300 p-2">
-                    <a href="#">Cosmetic Dentist</a>
+                    <a href="/services/cosmetic-dentistry">Cosmetic Dentist</a>
                 </li>
                 <li class="hover:bg-gray-300 p-2">
-                    <a href="#"> Children(Pediatric) Dentist </a>
+                    <a href="/services/pediatric-dentistry">
+                        Children(Pediatric) Dentist
+                    </a>
                 </li>
-                <li class="hover:bg-gray-300 py-2">
-                    <a href="#"> Root Canal Specialist</a>
+                <li class="hover:bg-gray-300 p-2">
+                    <a href="/services/root-canal-treatment">
+                        Root Canal Specialist</a
+                    >
                 </li>
             </ul>
         </li>
 
         <li>
-            <a href="#" class="hover:text-blue-600">Contact Us</a>
+            <a href="/#contactUs" class="hover:text-blue-600 cursor-pointer"
+                >Contact Us</a
+            >
         </li>
     </ul>
 </nav>

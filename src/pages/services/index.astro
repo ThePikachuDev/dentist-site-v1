@@ -1,0 +1,270 @@
+---
+// Services.astro
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Our Services | Dr. Yukti Ghei Gupta Dental Clinic">
+    <div class="relative min-h-screen">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img
+                src="/background.svg"
+                alt="Background Pattern"
+                class="w-full h-full object-cover"
+            />
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative mt-10 z-10 container mx-auto px-4 py-16">
+            <!-- Hero Section -->
+            <section class="mb-16 text-center">
+                <h1
+                    class="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600"
+                >
+                    Our Dental Services
+                </h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    Comprehensive dental care tailored to your unique needs,
+                    delivered with expertise and compassion
+                </p>
+            </section>
+
+            <!-- Services Grid -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+            >
+                <!-- Cosmetic Dentistry -->
+                <div
+                    class="bg-white bg-opacity-90 rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105"
+                >
+                    <div
+                        class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center"
+                    >
+                        <span class="text-6xl">😁</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-600">
+                            Cosmetic Dentistry
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Transform your smile with our comprehensive cosmetic
+                            dental services. Dr. Yukti Ghei Gupta specializes in
+                            creating beautiful, natural-looking smiles through
+                            advanced techniques and treatments.
+                        </p>
+                        <a
+                            href="/services/cosmetic-dentistry"
+                            class="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium text-sm shadow-md transform transition duration-300 hover:shadow-lg"
+                        >
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pediatric Dentistry -->
+                <div
+                    class="bg-white bg-opacity-90 rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105"
+                >
+                    <div
+                        class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center"
+                    >
+                        <span class="text-6xl">🧒</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-600">
+                            Pediatric Dentistry
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            We make dental visits fun and stress-free for
+                            children of all ages. Our child-friendly approach
+                            ensures positive dental experiences and helps
+                            establish lifelong oral health habits.
+                        </p>
+                        <a
+                            href="/services/pediatric-dentistry"
+                            class="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium text-sm shadow-md transform transition duration-300 hover:shadow-lg"
+                        >
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Root Canal Treatment -->
+                <div
+                    class="bg-white bg-opacity-90 rounded-xl shadow-xl overflow-hidden transform transition duration-300 hover:scale-105"
+                >
+                    <div
+                        class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center"
+                    >
+                        <span class="text-6xl">🦷</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-indigo-600">
+                            Root Canal Treatment
+                        </h3>
+                        <p class="text-gray-700 mb-6">
+                            Experience virtually painless root canal therapy
+                            with our advanced techniques. Dr. Yukti is a
+                            specialist in endodontic treatment, saving teeth
+                            that might otherwise require extraction.
+                        </p>
+                        <a
+                            href="/services/root-canal-treatment"
+                            class="inline-block px-6 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-medium text-sm shadow-md transform transition duration-300 hover:shadow-lg"
+                        >
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dental Implants -->
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <section
+                class="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 mb-16"
+            >
+                <h2
+                    class="text-3xl font-semibold mb-8 text-center text-indigo-600"
+                >
+                    Why Choose Our Dental Services
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+                >
+                    <div class="text-center">
+                        <div
+                            class="bg-gradient-to-r from-indigo-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium mb-2 text-gray-800">
+                            Expert Care
+                        </h3>
+                        <p class="text-gray-600">
+                            Highly qualified professionals with specialized
+                            training in various dental fields
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-gradient-to-r from-indigo-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium mb-2 text-gray-800">
+                            Advanced Technology
+                        </h3>
+                        <p class="text-gray-600">
+                            State-of-the-art equipment and techniques for
+                            superior treatment outcomes
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-gradient-to-r from-indigo-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium mb-2 text-gray-800">
+                            Convenient Hours
+                        </h3>
+                        <p class="text-gray-600">
+                            Flexible scheduling options to accommodate your busy
+                            lifestyle
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-gradient-to-r from-indigo-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-medium mb-2 text-gray-800">
+                            Comfortable Experience
+                        </h3>
+                        <p class="text-gray-600">
+                            Relaxing environment and gentle techniques for
+                            anxiety-free visits
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section
+                class="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl shadow-xl p-8 text-center text-white"
+            >
+                <h2 class="text-3xl font-bold mb-4">
+                    Ready to Schedule Your Appointment?
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Take the first step toward optimal dental health and a
+                    beautiful smile. Our friendly team is ready to assist you.
+                </p>
+                <button
+                    onclick="document.getElementById('contactUs').scrollIntoView({ behavior: 'smooth' })"
+                    class="px-8 py-3 bg-white text-indigo-600 font-semibold rounded-2xl shadow-lg transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
+                >
+                    Book Appointment
+                </button>
+            </section>
+        </div>
+    </div>
+</Layout>
