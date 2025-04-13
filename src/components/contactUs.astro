@@ -1,0 +1,105 @@
+---
+
+---
+
+<div
+    class="contactUs p-4 pt-16 w-screen flex flex-col gap-3 lg:flex-row justify-between items-center h-fit"
+>
+    <div class="form-ContactUS h-fit lg:h-screen w-screen lg:w-1/2">
+        <div class="p-4 mb-5">
+            <form class="flex flex-col gap-3 items-center" action="">
+                <h1 class="text-5xl">Contact Us</h1>
+                <div class="w-40 h-[2px] bg-black"></div>
+                <div>
+                    <h1 class="pl-0">Your Name</h1>
+                    <input
+                        type="text"
+                        name="name"
+                        class="border-[2px] p-3 w-96 rounded-md"
+                        placeholder="Your Name"
+                    />
+                </div>
+
+                <div class="mt-4">
+                    <h1>Your Message</h1>
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        class="border-[2px] p-3 w-96 h-30 rounded-md"
+                        id="message"></textarea>
+                </div>
+                <button
+                    id="animated-btn"
+                    type="submit"
+                    class="border-2 w-fit h-fit relative flex gap-3 overflow-hidden cursor-pointer rounded-xl px-4 p-2"
+                >
+                    <div
+                        id="btn-cover"
+                        class="w-full h-full z-[-1] absolute top-0 -left-40 bg-black"
+                    >
+                    </div>
+                    <span>Submit</span>
+                    <img
+                        src="/arrow-up-solid.svg"
+                        class="w-6 h-6 rotate-45"
+                        alt=""
+                    />
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div
+        class="ContactUS-Info px-4 h-[50vw] lg:h-screen w-screen lg:w-full flex flex-col gap-3 items-center"
+    >
+        <h1 class="text-5xl">Find Us Here</h1>
+        <div class="w-40 h-[2px] bg-black"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.7033990567547!2d74.8701080108009!3d31.641970374050704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964a7a109e319%3A0xe04f4da93606ba72!2sKmaxx%20American%20Hospital%20-%20Dr%20Ved%20Gupta%20Campus!5e0!3m2!1sen!2sin!4v1744305411910!5m2!1sen!2sin"
+            class="h-full w-full lg:w-3/4 lg:h-1/2"
+            style="border:0;
+            padding: 0 16px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<style>
+    input:focus,
+    textarea:focus {
+        outline: 2px solid black;
+        box-shadow: none;
+    }
+
+    input,
+    textarea {
+        transition: all 0.1s ease;
+        outline: 1.5px solid gray;
+        border: 1.5px solid gray;
+        box-shadow: none;
+    }
+
+    #animated-btn {
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+        border: 1px solid black;
+        outline: none;
+    }
+    #animated-btn:hover {
+        z-index: 99;
+        color: white;
+        outline: none;
+    }
+
+    #animated-btn:hover #btn-cover {
+        left: 0;
+        transition: all ease-in-out 0.5s;
+    }
+    #animated-btn:hover img {
+        z-index: 99;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+        rotate: 90deg;
+        filter: invert(1);
+    }
+</style>
+<script></script>
